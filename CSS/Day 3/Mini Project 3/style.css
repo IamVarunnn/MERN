@@ -1,0 +1,51 @@
+
+
+body{
+    background-color: black;
+}
+
+.container{
+    box-sizing: border-box;
+    position: relative;
+    height: 200px;
+    width: 300px;
+    background-color: #FFD700;
+}
+
+.box{
+    box-sizing: border-box;
+}
+
+.box1{
+    position: absolute;
+    height: 75px;
+    width: 100px;
+    background-color: #0057B7;
+}
+
+.box2{
+    position: absolute;
+    height: 75px;
+    width: 100px;
+    background-color: #0057B7;
+    top: 125px;
+}
+
+
+.box3{
+    position: absolute;
+    height: 75px;
+    width: 150px;
+    background-color: #0057B7;
+    left: 150px;
+}
+ 
+.box4{
+    
+    position: absolute;
+    height: 75px;
+    width: 150px;
+    background-color: #0057B7;
+    left: 150px;
+     top: 125px;
+}

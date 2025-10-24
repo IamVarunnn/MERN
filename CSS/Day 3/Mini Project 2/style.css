@@ -1,0 +1,29 @@
+
+
+.box{
+    position: relative;
+    height: 300px;
+    width: 500px;
+    border: 1px solid black;
+    background-color: rgb(26, 26, 103);
+}
+
+.vertical{
+    position: absolute;
+    left: 150px;
+    height: 300px;
+    width: 50px;
+    border: 1px solid black;
+    background-color: rgb(215, 215, 13);
+
+}
+
+.horizontal{
+    position: absolute;
+    height: 50px;
+    width: 500px;
+    border: 1px solid black;
+    background-color: rgb(215, 215, 13);
+    top: 125px;
+
+}
