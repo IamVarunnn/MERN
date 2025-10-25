@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Layout using Flex-Box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            gap: 20px;
+            height: 200px;
+            display: flex;
+            background-color: black;
+        }
+
+        .box{
+            margin: 20px;
+            height: 150px;
+            width: 120px;
+        }
+
+        .first{
+            background-color: green;
+        }
+
+        .second{
+             
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .child{
+            height: 50px;
+            width: 100%;
+        }
+
+        .child1{
+            background-color: rebeccapurple;
+        }
+
+        .child2{
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="box first"></div>
+        <div class="box second">
+            <div class="child child1"></div>
+            <div class="child child2"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
