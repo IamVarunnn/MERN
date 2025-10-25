@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            background-color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .signUp-box{
+            border-radius: 18px;
+            padding: 50px;
+            height: 500px;
+            width: 400px;
+            border: 1px solid black;
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* input{
+            border-radius: 5px;
+            border: 1px solid gray;
+            margin: 10px;
+            width: 100%;
+            padding: 10px;
+        } */
+
+        input {
+            width: calc(100% - 20px); /* 100% minus left & right margin */
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+
+        button{
+            font-size: 17px;
+            margin: 20px;
+            width: calc(100% - 20px);
+            margin-left: 9px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            color: white;
+            background-color:#1A73E8;
+            cursor: pointer;
+
+        }
+        p{
+            color:  gray;
+            margin-right: 5px;
+            text-align: center;
+        }
+
+        span{
+            
+            margin-right: 10px;
+            color: blue;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="signUp-box">
+
+            <form>
+                <h1>Sign Up</h1>
+                <div><input type="text" placeholder="First name"></div>
+                <div><input type="text" placeholder="Last name"></div>
+                <div><input type="email" placeholder="Email"></div>
+                <div><input type="password" placeholder="Password"></div>
+
+                <button>Sign Up</button>
+                <p>Already have an account?<span>Log In</span> </p>
+            </form>
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>
