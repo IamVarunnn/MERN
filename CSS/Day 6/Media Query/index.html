@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <style>
+
+        .container{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            font-size: 45px;
+        }
+
+        @media screen and (max-width:500px) {
+            .container{
+                height: 100px;
+                width: 100px;
+                background-color: blue;
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (min-width:900px) {
+            .container{
+                height: 400px;
+                width: 400px;
+                background-color: green;
+                font-size: 75px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">I am A box</div>
+
+</body>
+</html>
