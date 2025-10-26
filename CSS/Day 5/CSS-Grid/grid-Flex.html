@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Using FlexBox</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        .container{
+            display: flex;
+            height: 900px;
+            width: 900px;
+            flex-direction: column;
+        }
+
+        .insider{
+            height: 610px;
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .contents{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .header{
+            margin-bottom: 10px;
+            height: 100px;
+            width: 822px;
+            background-color: purple;
+        }
+
+
+         .sidebar{
+            margin-right: 10px;
+            height: 610px;
+            width: 266.7px;
+            background-color: red;
+        }
+
+        
+
+        .content-1{
+            margin-bottom: 10px;
+            height: 300px;
+            width: 543.5px;
+            background-color: blue;
+        }
+
+        .content-2{
+            
+            height: 300px;
+            width: 266.8px;
+            background-color: midnightblue;
+        }
+
+        .content-3{
+            margin-bottom: 10px;
+            margin-left: 10px;
+            height: 300px;
+            width: 266.8px;
+            background-color: rgb(130, 130, 134);
+        }  
+
+        .footer{
+            margin-top: 10px;
+            height: 100px;
+            width: 822px;
+            background-color: rgb(10, 0, 85);
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header"></div>
+        <div class="insider">
+            <div class="sidebar"></div>
+            <div class="contents">
+                <div class="content-1"></div>
+                <div class="content-2"></div>
+                <div class="content-3"></div>
+            </div>
+        </div>
+        <div class="footer"></div>
+         
+    </div>
+
+</body>
+</html>
