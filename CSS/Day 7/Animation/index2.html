@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Marquee Tags</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            background-color: rgb(254, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .container{
+            height: 500px;
+            width: 200px;
+            position: relative;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        p{
+            position: absolute;
+            padding: 10px;
+            color: black;
+            animation: moving 3s linear infinite;
+        }
+
+        @keyframes moving {
+            
+            from{
+                top: 100%;
+            }
+            to{
+                top:-20%;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <p class="para" >This is a scrolling text that has scroll in upper direction</p>
+    </div>
+</body>
+</html>
