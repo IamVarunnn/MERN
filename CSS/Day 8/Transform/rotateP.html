@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        .container{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 800px;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            transition: 3s linear;
+            cursor: pointer;
+        }
+
+
+        .box:hover{
+            background-color: #fff;
+            transform: rotateY(180deg);
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+</body>
+</html>

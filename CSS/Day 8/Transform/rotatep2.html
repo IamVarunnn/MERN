@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continous Rotation</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        .container{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: orange;
+            animation: move 2s linear infinite;
+            border-radius: 50%;
+        }
+        
+        @keyframes move {
+            from{
+                transform: rotate(0deg) translateX(100px) rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg) translateX(100px) rotate(-360deg);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box"></div>
+        <div class="box2"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center a div</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        body{
+            background-color: black;
+        }
+
+        .container{
+            height: 100vh;
+            background-color: black;
+            position: relative;
+        }
+
+        .box{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: midnightblue;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            animation: moving 3s linear infinite;
+        }
+
+
+        @keyframes moving {
+            
+            from{
+                transform: rotate(0deg) translate(100px,100px) rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg) translate(100px,100px) rotate(-360deg);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+</body>
+</html>
