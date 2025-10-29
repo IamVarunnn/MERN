@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        .container{
+            height: 500px;
+            width: 500px;
+            background-color: midnightblue;
+            position: relative;
+             
+        }
+
+        .box{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: darkgray;
+            top: 10%;
+            left: 10%;
+            transform: translate(-50%,-50%);
+            animation: move 1s linear infinite;
+            
+        }
+
+        @keyframes move {
+            
+            from{
+                transform: rotate(0deg) translateX(100px) rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg) translateX(100px) rotate(-360deg);
+            }
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+</body>
+</html>
