@@ -25,12 +25,14 @@ body {
     background-color: #2a2a2a;
     border-radius: 20px;
     padding: 20px;
+    position: sticky;
 }
 
 .main-content{
-    
+    padding: 30px;
     background-color: #2a2a2a;
     border-radius: 20px;
+    border: 1px solid #3a3a3a;
 }
 
 .profile-info{
@@ -107,4 +109,179 @@ body {
 .social-info img:hover{
     /* background-color: rgb(230, 142, 142); */
    filter: grayscale(0) invert(0);
+}
+
+
+.navigation-bar{
+  
+    padding: 10px 20px;
+    border-bottom: 1px solid #3a3a3a;
+    
+}
+
+.navigation-bar nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.navigation-bar nav a{
+    text-decoration: none;
+    color: #a0a0a0;
+    font-weight: 500;
+    gap: 10px;
+    transition: color 0.3s ease;
+
+}
+
+.navigation-bar nav a:hover{
+    color: #ffbf00;
+}
+ 
+.navigation-bar .active{
+    color: #ffbf00;
+}
+
+.about-me{
+    
+    padding: 10px;
+    text-align: justify;
+}
+
+.about-me h2{
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.about-me .line{
+    height: 5px;
+    background-color: #ffbf00;
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.myskills{
+    padding: 10px;
+}
+
+h2{
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.line{
+     height: 5px;
+    background-color: #ffbf00;
+    width: 50px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+}
+
+.grid-container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.grid-container .item{
+   padding: 20px;
+   border-radius: 10px;
+   border: 2px solid #3a3a3a;
+
+}
+
+.item{
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #3a3a3a;
+    background-color: #1e1e1e;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease, boxshadow 10s ease;
+}
+
+ 
+.item img{
+    height: 48px;
+    width: 48px;
+    
+    filter: invert(75%) sepia(50%) saturate(1000%) hue-rotate(350deg) brightness(110%) contrast(101%);
+    
+}
+
+.item h3{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.pratice-links{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.education{
+    padding: 20px;
+}
+
+.btech{
+    position: relative;
+    padding-left: 10px;
+}
+
+.edtech{
+    padding-left:10px;
+    margin-top: 20px;
+}
+
+.year{
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin-bottom: 5px;
+}
+
+.degree{
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.place{
+    font-size: 1rem;
+    margin-bottom: 5px;
+
+}
+
+.score{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.circle{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border: 3px solid #ffbf00;
+    border-radius: 50%;
+    margin-left: 20px;
+    left: -30px;
+    top: 5px;
+}
+
+.liner{
+    position: absolute;
+    height: 100px;
+    width: 3px;
+    background-color:#3a3a3a;
+    top: 15px;
+    left: -6.5px;
 }
