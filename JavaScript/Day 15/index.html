@@ -6,6 +6,10 @@
     <title>Document</title>
     <style>
 
+        body{
+            background-color: black;
+        }
+
         .child{
             height: 150px;
             width: 150px;
@@ -32,6 +36,31 @@
             background-color: rgba(168, 141, 47, 0.577);
         }
 
+        .grandparent{
+            height: 300px;
+            width: 300px;
+            background-color: rgba(17, 255, 0, 0.571);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parent{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(29, 1, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .child{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(138, 70, 201);
+             
+        }
+
     </style>
 </head>
 <body>
@@ -49,6 +78,12 @@
         <div class="child4 child">Box 4</div>
         <div class="child5 child">Box 5</div>
     </div>
+
+    <!-- <div class="grandparent">
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </div> -->
 
     <script src="script.js" ></script>
 </body>
